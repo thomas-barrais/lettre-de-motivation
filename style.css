@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+  background-color: blanchedalmond;
+}
+
+h1 {
+  padding: 1rem 0 2rem 0;
+}
+
+h3 {
+  padding: 1rem 0 2rem 0;
+}
+
+h4 {
+  padding-bottom: 2rem;
+}
+
+h6 {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.indent {
+  text-indent: 30px;
+}
+
+.fen {
+  height: 100vh;
+  width: 100vw;
+  /* background-color: red; */
+}
+
+.fen h1 {
+  text-align: center;
+}
+
+.fen h2 {
+  display: block;
+  /* float: left; */
+  margin-left: 20px;
+}
+
+.fen h3 {
+  text-align: center;
+}
+
+.fen h4 {
+  text-align: center;
+}
+
+.fen p {
+  text-align: justify;
+  padding: 1rem 4rem;
+}
+
+.fen ul {
+  text-align: center;
+}
+
+.fen ul li {
+  display: inline-block;
+  padding: 0 10rem 0 10rem;
+}
+
+.fen ul li a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.fen ul li p {
+  text-align: center;
+  font-size: small;
+  padding: 2rem 0;
+  /* max-width: 20%; */
+}
