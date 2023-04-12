@@ -42,7 +42,8 @@ ul {
 .fen {
   height: 100vh;
   width: 99vw;
-  /* background-color: red; */
+  overflow-x: hidden; /* Empêcher la barre de défilement horizontal */
+  overflow-y: hidden;
 }
 
 .fen h1 {
@@ -94,4 +95,98 @@ ul {
   font-size: small;
   padding: 2rem 0;
   /* max-width: 20%; */
+}
+
+/* animation */
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in2 {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 0.9s;
+  animation-delay: 2.1s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in3 {
+  opacity: 0;
+  animation-name: fade-in-animation;
+  animation-duration: 0.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes apparitionDepuisLaGauche {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.element-cible {
+  opacity: 0;
+  animation-name: apparitionDepuisLaGauche;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes apparition-titre-milieu {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.titre-milieu {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.competences-content1 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.3s;
+  animation-fill-mode: both;
+}
+
+.competences-content2 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation-name: apparition-titre-milieu;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
 }
