@@ -41,7 +41,7 @@ ul {
 
 .fen {
   height: 100vh;
-  width: 95vw;
+  width: 99vw;
   /* background-color: red; */
 }
 
@@ -80,6 +80,13 @@ ul {
 .fen ul li a {
   text-decoration: none;
   color: var(--text);
+  border-radius: 5px;
+  padding: 0.2rem 0.2rem;
+  text-align: center;
+}
+
+.fen ul li a:hover {
+  background-color: grey;
 }
 
 .fen ul li p {
