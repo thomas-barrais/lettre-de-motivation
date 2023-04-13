@@ -13,6 +13,7 @@ body {
   color: var(--text);
   font-size: 1.6rem;
   background-color: blanchedalmond;
+  min-height: 100vh;
 }
 
 h1 {
@@ -37,13 +38,6 @@ ul {
 
 .indent {
   text-indent: 30px;
-}
-
-.fen {
-  height: 100vh;
-  width: 99vw;
-  overflow-x: hidden; /* Empêcher la barre de défilement horizontal */
-  overflow-y: hidden;
 }
 
 .fen h1 {
